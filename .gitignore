@@ -59,3 +59,22 @@ typings/
 
 # next.js build output
 .next
+
+# os generated
+*~
+.DS_Store
+Thumbs.db
+
+# workspace
+.project
+.vscode/*
+!/.vscode/launch.json
+**/.vscode/*
+!**/.vscode/launch.json
+*.code*
+.idea
+.sublime*
+
+# to avoid merge conflicts
+package-lock.json
+yarn.lock
