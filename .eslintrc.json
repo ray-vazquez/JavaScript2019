@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "indent": ["off", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["warn", "unix"],
+    "no-alert": "warn",
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "quotes": ["off", "double"],
+    "semi": ["warn", "always"]
+  }
+}
