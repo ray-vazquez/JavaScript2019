@@ -10,11 +10,11 @@
 
 Much of the software is going to be installed over command line, so before starting, open your terminal window. (You can open it by pressing _command+space_ and searching for _terminal_).
 
-# Xcode
+## Xcode
 
 Xcode can be found in the App Store. It will take around 50 minutes to install, so please intall ASAP.
 
-# Homebrew
+## Homebrew
 
 [Homebrew](https://brew.sh/) is a package manager for Mac, meaning that it will help make installing and managing a lot of command line software easier. It is the recommended way to install Node.js.
 
@@ -36,7 +36,7 @@ Type `echo $PATH`. Make sure that _/usr/local/bin_ is somewhere in the response.
 export PATH="/usr/local/bin:$PATH"
 ```
 
-# Git
+## Git
 
 Git is version control software. It is used for sharing code, combining team members' code and managing different versions of your code.
 
@@ -50,7 +50,7 @@ brew install git
 
 When it's finished, type `git --version` to confirm that it has installed.
 
-# Node.js and NPM Packages
+## Node.js and NPM Packages
 
 Node.js is JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
 
@@ -68,7 +68,7 @@ brew install node
 
 When it’s finished, type `node -v` to confirm that it has installed.
 
-## ESLint
+### ESLint
 
 ESLint is a linter, meaning that will point out potential errors while you are typing in a code editor like Visual Studio Code, Atom or Sublime.
 
@@ -81,7 +81,7 @@ npm install -g eslint-plugin-react
 
 When it’s finished, type `eslint -v` in your terminal to confirm it has installed.
 
-# Visual Studio Code (Recommended) and Plugins
+## Visual Studio Code (Recommended) and Plugins
 
 Visual Studio Code is an IDE. We will be teaching with Visual Studio Code and highly recommend that you use it too. You may opt for another editor, but we will not be able to help you if problems arise.
 
@@ -91,13 +91,13 @@ When it finishes downloading, double click on the downloaded ZIP file and move V
 
 Open Visual Studio Code.
 
-## Adding Visual Studio Code to Your Path Variable
+### Adding Visual Studio Code to Your Path Variable
 
 You should configure your computer so that you can open Visual Studio Code via the terminal. Press _command+shift+p_, search for _shell command_ and click on _Install 'code' command in PATH_.
 
 ![](install-screens/vscode-mac-path.png)
 
-## ESLint Extension
+### ESLint Extension
 
 Open the Extensions tab on the left, search for _ESLint_ and install _ESLint_.
 
@@ -107,7 +107,7 @@ Once its installed, click on _Reload_.
 
 ![](install-screens/vscode-eslint-reload.png)
 
-## Quokka.js
+### Quokka.js
 
 Quokka is a sandbox that lets you play with JavaScript. Search for _Quokka_ in the Extensions tab on the left and install _Quokka.js_. Once its installed, click on _Reload_.
 
@@ -115,7 +115,7 @@ If Quokka prompts you to go Pro, select _'Community' features only_.
 
 ![](install-screens/vscode-quokka-prompt.png)
 
-## Prettier Extension (Optional)
+### Prettier Extension (Optional)
 
 Prettier automatically formats your code and you can configure it to format your code whenever you save a file. Installing this is optional.
 
@@ -135,7 +135,7 @@ In the right-hand panel underneath where it says "USER SETTINGS", add the follow
 
 ![](install-screens/prettier-settings.png)
 
-# Chrome (Recommended) or Firefox
+## Chrome (Recommended) or Firefox
 
 You are required to use Chrome or Firefox because the React and Redux extensions for debugging your code are only available for these browsers. We recommend Chrome because we will be demostrating Chrome's tools in class, but you are free to download any of following:
 
@@ -143,7 +143,7 @@ You are required to use Chrome or Firefox because the React and Redux extensions
 - [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
 
-# Slack
+## Slack
 
 Before installing Slack, please accept the invite AlbanyCanCode's channel. You should have received an email before class.
 

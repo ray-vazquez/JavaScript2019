@@ -6,7 +6,7 @@
 4. Chrome (Recommended) or Firefox
 5. Slack
 
-# Visual Studio Code (Recommended)
+## Visual Studio Code (Recommended)
 
 Visual Studio Code is an IDE. We will be teaching with Visual Studio Code and highly recommend that you use it too. You may opt for another editor, but we will not be able to help you if problems arise.
 
@@ -18,7 +18,7 @@ When it finishes downloading, double click on the downloaded .exe and accept the
 
 Continue with the installer. When it finishes, Visual Studio Code should open. When it does, close out of it for now. We will revisit Visual Studio Code once we finish installing a few dependencies.
 
-# Git for Windows
+## Git for Windows
 
 **You are required to use Git Bash because it support unix style commands. If you Git installed but not Git Bash, then you should remove Git and follow the instruction below to reinstall.**
 
@@ -28,25 +28,25 @@ To install git, got to https://git-scm.com/downloads and click on _Windows_.
 
 When it finishes downloading, open the installer. If you are asked to allow the app to make changes to your device, click on _Yes_. Below is the recommended git settings. If you do not see instructions for whatever screen you are on, then accept the defaults.
 
-## Select Components
+### Select Components
 
 I suggest you check the following:
 
 ![Additional Icons, Check daily for Git for Windows updates and the defaults](install-screens/git-select-components.png)
 
-## Choose the default editor used by Git
+### Choose the default editor used by Git
 
 If you intalled Visual Studio code, select _Use Visual Studio Code as Git's default editor_ from the dropdown on the _Choose the default editor used by Git_ screen. If you opt for another code editor, you can select it from the list. If it's not there, then choose nano.
 
 ![Use Visual Studio Code as Git's default editor](install-screens/git-default-editor.png)
 
-## Configuring the line-endings conversions
+### Configuring the line-endings conversions
 
 To avoid unnecessary merge conflicts (believe me, merge conflicts are very frustrating), please make sure _Checkout Windows-style, commit Unix-style line endings_ is selected.
 
 When you finish installing, you should see Git Bash on your computer. Open it, type `git --version` to confirm that it works. You should see soemthing like _git version 2.20.1_. Then close out Git Bash.
 
-# Node.js and NPM Packages
+## Node.js and NPM Packages
 
 Node.js is JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
 
@@ -62,7 +62,7 @@ When it finishes downloading, open the downloaded file. Accept the License Agree
 
 When it’s finished installing, open Git Bash and type `node -v` to confirm that it has installed. If you had Git Bash open before installing Node.js and you get an error, try reopening Git Bash and see if this resolves the issue.
 
-## ESLint
+### ESLint
 
 ESLint is a linter, meaning that will point out potential errors while you are typing in a code editor like Visual Studio Code, Atom or Sublime.
 
@@ -75,9 +75,9 @@ npm install -g eslint-plugin-react
 
 When it’s finished, type `eslint -v` to confirm that it has installed.
 
-# Visual Studio Code Setup and Plugins
+## Visual Studio Code Setup and Plugins
 
-## Setting Git Bash as your Default Shell
+### Setting Git Bash as your Default Shell
 
 In Visual Studio Code, press _ctrl+shift+p_, search for _default shell_ and select _Terminal: Select Default Shell_. Then choose _Git Bash_.
 
@@ -87,7 +87,7 @@ Press _ctrl+`_. If Git Bash opens inside of Visual Studio Code, then it worked.
 
 ![](install-screens/vscode-git-bash.png)
 
-## ESLint Extension
+### ESLint Extension
 
 Open the Extensions tab on the left, search for _ESLint_ and install _ESLint_.
 
@@ -97,7 +97,7 @@ Once its installed, click on _Reload_.
 
 ![](install-screens/vscode-eslint-reload.png)
 
-## Quokka.js
+### Quokka.js
 
 Quokka is a sandbox that lets you play with JavaScript. Search for _Quokka_ in the Extensions tab on the left and install _Quokka.js_. Once its installed, click on _Reload_.
 
@@ -109,7 +109,7 @@ If you get this Windows Security Alert from Windows when running Quokka, click o
 
 ![Windows Security Alert](install-screens/quokka-windows-alert.png)
 
-## Prettier Extension (Optional)
+### Prettier Extension (Optional)
 
 Prettier automatically formats your code and you can configure it to format your code whenever you save a file. Installing this is optional.
 
@@ -129,7 +129,7 @@ In the right-hand panel underneath where it says "USER SETTINGS", add the follow
 
 ![](install-screens/prettier-settings.png)
 
-# Chrome (Recommended) or Firefox
+## Chrome (Recommended) or Firefox
 
 You are required to use Chrome or Firefox because the React and Redux extensions for debugging your code are only available for these browsers. We recommend Chrome because we will be demostrating Chrome's tools in class, but you are free to download any of following:
 
@@ -137,8 +137,8 @@ You are required to use Chrome or Firefox because the React and Redux extensions
 - [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
 
-# Slack
+## Slack
 
 Before installing Slack, please accept the invite AlbanyCanCode's channel. You should have received an email before class.
 
-Slack can be found in the App Store.
+Go to https://slack.com/downloads/windows and click on a Download option.
