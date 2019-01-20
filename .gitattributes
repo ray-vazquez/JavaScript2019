@@ -44,6 +44,7 @@
 *.ejs text
 *.hbt text
 *.jade text
+*.jsx text
 *.haml text
 *.hbs text
 *.dot text
@@ -60,10 +61,8 @@
 .gitconfig text
 
 # code analysis config
-.jshintrc text
-.jscsrc text
-.jshintignore text
-.csslintrc text
+.eslintrc
+.eslintrc.json
 
 # misc config
 *.yaml text
@@ -71,8 +70,7 @@
 .editorconfig text
 
 # build config
-*.npmignore text
-*.bowerrc text
+.babelrc
 
 # Heroku
 Procfile text
@@ -82,6 +80,9 @@ Procfile text
 *.md text
 LICENSE text
 AUTHORS text
+
+# Misc
+*.csv text
 
 
 #

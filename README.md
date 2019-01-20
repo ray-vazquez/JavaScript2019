@@ -31,3 +31,7 @@ git push origin master
 ```
 
 Follow the guide [Creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) to make the pull request. The "original repository you created your fork from" that the guide refers to in Step 1 is the AlbanyCanCodeCourses's repository.
+
+# Resources
+
+- Installation Guides: [Mac](docs/InstallationGuideMac.md) [Windows](docs/InstallationGuideWindows.md)
