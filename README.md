@@ -34,4 +34,4 @@ Follow the guide [Creating a pull request from a fork](https://help.github.com/a
 
 ## Resources
 
-- Installation Guides: [Mac](docs/InstallationGuideMac.md) [Windows](docs/InstallationGuideWindows.md)
+- Installation Guide: [Mac](docs/InstallationGuideMac.md) [Windows](docs/InstallationGuideWindows.md)
