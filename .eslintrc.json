@@ -19,6 +19,7 @@
     "linebreak-style": ["warn", "unix"],
     "no-alert": "warn",
     "no-console": "warn",
+    "no-empty": "warn",
     "no-unused-vars": "warn",
     "quotes": ["off", "double"],
     "semi": ["warn", "always"]

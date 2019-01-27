@@ -8,7 +8,7 @@
 6. Chrome (Recommended) or Firefox
 7. Slack
 
-Much of the software is going to be installed over command line, so before starting, open your terminal window. (You can open it by pressing _command+space_ and searching for _terminal_).
+We are going to install software over the command line, so before starting, open your terminal window. (You can open it by pressing `command+space` and searching for _terminal_).
 
 ## Xcode
 
@@ -16,9 +16,9 @@ Xcode can be found in the App Store. It will take around 50 minutes to install, 
 
 ## Homebrew
 
-[Homebrew](https://brew.sh/) is a package manager for Mac, meaning that it will help make installing and managing a lot of command line software easier. It is the recommended way to install Node.js.
+[Homebrew](https://brew.sh/) is a package manager for Mac, meaning that it will help make installing and managing a lot of command line software easier. We will be installing Node.js with Homebrew to avoid permission issues.
 
-If you already have Homebrew installed or if you are not sure whether you have it installed, type `brew -v` in your terminal. If you see _Homebrew 1.9.2_ then you have the latest version. If your version is out-of-date, update Homebrew with `brew update` and then you can skip ahead to the next section. If you get a _command not found_ error, then you will need to install Homebrew.
+If you already have Homebrew installed or if you are not sure whether you have it installed, type `brew -v` in your terminal. If you see _Homebrew 1.9.2_, then you have the latest version. If your version is out-of-date, update Homebrew with `brew update` and you can skip ahead to the next section. If you get a _command not found_ error, then you will need to install Homebrew.
 
 To install Homebrew, type:
 
@@ -54,7 +54,9 @@ When it's finished, type `git --version` to confirm that it has installed.
 
 Node.js is JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
 
-You will need to the latest LTS version of Node installed (10.15.0) as of February 4, 2019. If you already have Node.js installed, type `node -v`. If you do not have the latest version, see https://flaviocopes.com/how-to-update-node/ for instructions on how to upgrade. It is also a good idea to update NPM. You can update it with:
+You will need to have the latest LTS version of Node installed as of February 4, 2019 (10.15.0). If you already have Node.js installed, type `node -v`. If you do not have the latest version, see https://flaviocopes.com/how-to-update-node/ for instructions on how to upgrade.
+
+You should also update NPM. You can update it with:
 
 ```shell
 npm install -g npm@latest
@@ -70,7 +72,7 @@ When it’s finished, type `node -v` to confirm that it has installed.
 
 ### ESLint
 
-ESLint is a linter, meaning that will point out potential errors while you are typing in a code editor like Visual Studio Code, Atom or Sublime.
+ESLint is a linter, meaning that it will point out potential errors while you are typing in a code editor like Visual Studio Code, Atom or Sublime.
 
 To install ESLint and its React plugin, type:
 
@@ -83,7 +85,7 @@ When it’s finished, type `eslint -v` in your terminal to confirm it has instal
 
 ## Visual Studio Code (Recommended) and Plugins
 
-Visual Studio Code is an IDE. We will be teaching with Visual Studio Code and highly recommend that you use it too. You may opt for another editor, but we will not be able to help you if problems arise.
+Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with progamming and command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
 
 To install, go to https://code.visualstudio.com and click on _Download for Mac_.
 
@@ -93,7 +95,7 @@ Open Visual Studio Code.
 
 ### Adding Visual Studio Code to Your Path Variable
 
-You should configure your computer so that you can open Visual Studio Code via the terminal. Press _command+shift+p_, search for _shell command_ and click on _Install 'code' command in PATH_.
+You should configure your computer so that you can open Visual Studio Code via the terminal. Press `command+shift+p`, search for _shell command_ and click on _Shell Command: Install 'code' command in PATH_.
 
 ![](install-screens/vscode-mac-path.png)
 
@@ -121,11 +123,11 @@ Prettier automatically formats your code and you can configure it to format your
 
 If you would like to use prettier, search for _Prettier_ in the Extensions tab on the left and install _Prettier - Code formatter_. Once its installed, click on _Reload_.
 
-You can now adjust Visual Studio's settings so that it will format on save and will play nicely with Prettier's defaults. Press _command+,_ and click on the `{}` icon in the top right.
+You can now adjust Visual Studio's settings so that it will format on save and will play nicely with Prettier's defaults. Press `command+,` and click on the `{}` icon in the top right.
 
 ![](install-screens/settings-icon.png)
 
-In the right-hand panel underneath where it says "USER SETTINGS", add the following and then save. Do not overwrite any settings that you already have.
+In the right-hand panel underneath where it says "USER SETTINGS", append the options to the list and then save. Do not overwrite any settings that you already have.
 
 ```json
   "editor.formatOnSave": true,
@@ -145,6 +147,6 @@ You are required to use Chrome or Firefox because the React and Redux extensions
 
 ## Slack
 
-Before installing Slack, please accept the invite AlbanyCanCode's channel. You should have received an email before class.
+Before installing Slack, please accept the invite to AlbanyCanCode's channel (_albanycancode_). You should have received an email before class.
 
-Slack can be found in the App Store.
+Use can use the web or desktop version. The desktop version can be found in the App Store.
