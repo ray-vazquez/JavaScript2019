@@ -44,6 +44,7 @@ function highestNumber(array) {}
  **/
 
 function combineArray(array1, array2) {}
+
 /**
  * A palindrom is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
  * Checks to see if a string is a palindrome.
@@ -55,7 +56,9 @@ function combineArray(array1, array2) {}
 
 function isPalindrome(str) {}
 
-/***
+/**
+ * @param  {[string]}  string
+ * @return {object},
  *  Make an object that represents a dog called myDog which contains the properties "name"
  *  (a string), "legs", "tails" and "friends"
  */
