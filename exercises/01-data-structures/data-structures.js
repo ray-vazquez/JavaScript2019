@@ -33,10 +33,13 @@ function accessingAnArray() {
  **/
 function highestNumber(array) {}
 
-/***
+/**
  * Combine an array by using the spread operator
- * @param  { array, arary }
- *  @returns { array }
+ * @param  { array, array }
+ * @returns { array }
+ * @example
+ * combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
+ *
  *
  **/
 
@@ -46,8 +49,10 @@ function combineArray(array1, array2) {}
  * Checks to see if a string is a palindrome.
  * Use the split and join methods to solve this problem
  * @param  {[string]}  string
- * @return {Boolean}
+ * @return {Boolean},
+ *
  */
+
 function isPalindrome(str) {}
 
 /***
@@ -124,5 +129,6 @@ module.exports = {
   createDogObject,
   createStudentObject,
   addFriendsForMyDog,
-  returnListOfCountries
+  returnListOfCountries,
+  combineArray
 };
