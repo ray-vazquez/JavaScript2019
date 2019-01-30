@@ -60,13 +60,20 @@ function isPalindrome(str) {}
  * @param  {[string]}  string
  * @return {object},
  *  Make an object that represents a dog called myDog which contains the properties "name"
- *  (a string), "legs", "tails" and "friends"
- */
+ *  (a string), "legs", "tails" and "friends" should be an array with a list of friends names
+ *  @example  the function should return an object that resembles this:
+ *** myObj = {
+    legs: 4,
+     tails: 1",
+    };
+ *   
+ ****/
 
 function createDogObject() {}
 
 /**
- * Access testObj and return the property ballcap
+ * Access testObj and return the property ballcap in a variable
+ * @return {object},
  *
  *
  */
@@ -82,47 +89,50 @@ function accessObject() {
 
   return hatValue;
 }
-/***
- *   The function should return an object with your first name and last name
- *   i.e let name = {
- *     firstName:'Jamal',
- *    lastName:'Taylor'
- *   }
- *
- */
-function createStudentObject() {}
 
 /**
- *  Add three friends to the array nested inside the myDog Object
- *
+ *   Update the object to contain your first and last name.
+ *   Add at least three skills inside the array
+ *   @return {array}
  */
 
-function addFriendsForMyDog() {
-  const myDog = {
-    name: 'Happy Coder',
-    legs: 4,
-    tails: 1,
-    friends: ['']
+function createStudentObject() {
+  const student = {
+    firstname: '',
+    lastname: '',
+    skills: ['']
   };
   // Only change code below this line.
 
-  return myDog;
+  return student;
 }
 
 /**
  *  Using Object.keys return all the properties contained in the object
  *  the function should return name,legs,tails, and friends in an array
+ *
+ *  @return {array}
  */
 
-function returnListOfCountries() {
-  let myDog = {
-    name: 'Happy Coder',
+function returnObjectProperties() {
+  const dog = {
+    tail: 1,
     legs: 4,
-    tails: 1,
-    friends: ['freeCodeCamp Campers']
-    // Only change code below this line.
+    friends: ['Rusty', 'Sparky'],
+    name: 'Rocket'
   };
+  //Add code here
+  //hint you need to return an array
 }
+
+/**
+ * The function accepts two arguments and returns a combined object
+ * @param  {obj1} {obj2}
+ * @return {object},
+ *
+ */
+
+function combineObject(obj1, obj2) {}
 
 module.exports = {
   createAnArray,
@@ -131,7 +141,8 @@ module.exports = {
   isPalindrome,
   createDogObject,
   createStudentObject,
-  addFriendsForMyDog,
-  returnListOfCountries,
-  combineArray
+  returnObjectProperties,
+  combineArray,
+  accessObject,
+  combineObject
 };

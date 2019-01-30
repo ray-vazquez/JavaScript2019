@@ -6,7 +6,10 @@ const {
   accessingAnArray,
   highestNumber,
   combineArray,
-  isPalindrome
+  isPalindrome,
+  createStudentObject,
+  returnObjectProperties,
+  combineObject
 } = require('../../exercises/01-data-structures/data-structures.js');
 
 describe('Data structures', () => {
@@ -34,5 +37,31 @@ describe('Data structures', () => {
     expect(eyeResult).to.be.equal(true);
     expect(notAPalindrome).to.be.equal(false);
     expect(nope).be.equal(false);
+  });
+  it('it should return a object', () => {
+    const dog = createDogObject();
+    expect(dog).to.be.an('object');
+    expect(dog).to.have.all.keys('legs', 'tails', 'friends');
+  });
+  it('it should return ballcap', () => {
+    const obj = accessObject();
+    expect(obj).to.equal('ballcap');
+  });
+  it('it should return an object that contains an array that has three values', () => {
+    const student = createStudentObject();
+    expect(student.skills.length).to.equal(3);
+  });
+  it('it should return all object properties', () => {
+    const objectProperties = returnObjectProperties();
+    expect(objectProperties.length).to.equal(4);
+  });
+  it('it should combine two objects and return a single object', () => {
+    const obj1 = {
+      firstName: 'Clark'
+    };
+    const obj2 = {
+      lastName: 'Kent'
+    };
+    const combinedObj = combineObject(obj1, obj2);
   });
 });
