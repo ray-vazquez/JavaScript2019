@@ -1,7 +1,10 @@
 {
   "name": "javascript2019",
   "version": "1.0.0",
-  "description": "",
+  "description": "AlbanyCanCode's JavaScript Frameworks Class Spring 2019",
+  "engine": {
+    "node": "10.15.1"
+  },
   "scripts": {
     "test": "mocha",
     "testAll": "mocha ./test/**/*-test.js"
@@ -9,12 +12,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlbanyCanCodeCourses/JavaScript2018.git"
-  },
-  "babel": {
-    "presets": [
-      "es2015",
-      "react"
-    ]
   },
   "author": "AlbanyCanCode",
   "devDependencies": {
@@ -25,6 +22,8 @@
     "chai-arrays": "^2.0.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^5.13.0",
+    "eslint-plugin-react": "^7.12.4",
     "mocha": "^5.2.0",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.3.2",

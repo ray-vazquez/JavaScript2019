@@ -78,3 +78,6 @@ Thumbs.db
 # to avoid merge conflicts
 package-lock.json
 yarn.lock
+
+# misc
+*NOCOMMIT*

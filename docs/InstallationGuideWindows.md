@@ -8,7 +8,7 @@
 
 ## Visual Studio Code (Recommended)
 
-Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with progamming and command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
+Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
 
 To install, go to https://code.visualstudio.com and click on _Download for Windows_.
 
@@ -44,21 +44,21 @@ If you intalled Visual Studio code, select _Use Visual Studio Code as Git's defa
 
 To avoid unnecessary merge conflicts (believe me, merge conflicts are very frustrating), please make sure _Checkout Windows-style, commit Unix-style line endings_ is selected.
 
-When you finish installing, you should see Git Bash on your computer. Open it, type `git --version` to confirm that it works. You should see something like _git version 2.20.1_. Then close out Git Bash.
+When you finish installing, you should see Git Bash on your computer. Open it, type `git --version` to confirm that it works. You should see something like _git version 2.20.1_. Then close out of Git Bash.
 
 ## Node.js and NPM Packages
 
-Node.js is JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
+Node.js is a JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
 
-You will need to have the latest LTS version of Node installed as of February 4, 2019 (10.15.0). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
+You will need to have the latest LTS version of Node installed as of February 4, 2019 (10.15.1). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
 
 If Node.js is up-to-date, you should update NPM. You can update it with:
 
-```shell
+```bash
 npm install -g npm@latest
 ```
 
-To install Node.js, go to https://nodejs.org/en/ and click on the _10.15.0 LTS_ version.
+To install Node.js, go to https://nodejs.org/en/ and click on the _10.15.1 LTS_ version.
 
 When it finishes downloading, open the downloaded file. Accept the License Agreement and all of the defaults. If you are asked to allow the app to make changes to your device, click on _Yes_.
 
@@ -70,7 +70,7 @@ ESLint is a linter, meaning that it will point out potential errors while you ar
 
 To install ESLint and its React plugin, type this in Git Bash:
 
-```shell
+```bash
 npm install -g eslint
 npm install -g eslint-plugin-react
 ```
@@ -101,19 +101,19 @@ Once its installed, click on _Reload_.
 
 ### Quokka.js
 
-Quokka is a sandbox that lets you play with JavaScript. Search for _Quokka_ in the Extensions tab on the left and install _Quokka.js_. Once its installed, click on _Reload_.
+[Quokka.js](https://quokkajs.com/docs/?editor=vsc) is a sandbox that lets you play with JavaScript inside Visual Studio Code and other popular code editors. Search for _Quokka_ in the Extensions tab on the left and install _Quokka.js_. Once its installed, click on _Reload_.
 
 If Quokka prompts you to go Pro, select _'Community' features only_.
 
 ![](install-screens/vscode-quokka-prompt.png)
 
-If you get this Windows Security Alert from Windows when running Quokka, click on _Allow access_.
+If you get this Windows Security Alert from Windows when running Quokka, make sure both options are checked and click on _Allow access_.
 
 ![Windows Security Alert](install-screens/quokka-windows-alert.png)
 
 ### Prettier Extension (Optional)
 
-Prettier automatically formats your code and you can configure it to format your code whenever you save a file. Installing this is optional.
+Prettier automatically formats your code and you can configure it to format your code whenever you save a file. Installing this is optional for now but we will require it for the final project.
 
 If you would like to use prettier, search for _Prettier_ in the Extensions tab on the left and install _Prettier - Code formatter_. Once its installed, click on _Reload_.
 

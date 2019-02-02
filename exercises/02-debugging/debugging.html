@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Debugging in the Browser</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script src="browser.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="mt-4">
+        <h1 class="display-4">Debugging in the Browser</h1>
+        <p class="lead">
+          Debug the file found in <em>exercises/02-debugging/browser.js</em>. The script will output text into the box below. Right now, there are bugs in the output. Read the comments in <em>browser.js</em> to see what the output is expected to look like.
+        </p>
+        <!-- I am a box! -->
+        <div class="card bg-secondary text-white mb-3">
+          <div class="card-body">
+            <pre id="box" class="text-white mb-0"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <h2>Getting Started <small>with the Console</small></h2>
+        <div>
+          To get started, press one of these shortcuts to open your browser's
+          Developer Tools:
+          <ul class="list-unstyled">
+            <li>
+              <em>Mac <code>option+command+i</code></em>
+            </li>
+            <li>
+              <em>Windows <code>ctrl+shift+i</code> or <code>F12</code></em>
+            </li>
+          </ul>
+          <p>
+            Click on the <em>Console</em> tab. This is the debugging console,
+            where you can log messages and inspect data. Here is how your
+            can do that:
+          </p>
+          <pre><code>console.log('message 1', 'message 2'); // Outputs messages
+console.log(myVariable, myObject, myArray); // Inspects data</code></pre>
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/console"
+              >See other methods of logging to your console.</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-4">
+        <h2>Getting Started <small>with Breakpoints</small></h2>
+        <p>
+          <a href="https://javascript.info/debugging-chrome"
+            >Try this tutorial on how to use breakpoints in Chrome.</a
+          >
+        </p>
+        <p>
+          Breakpoints in a nutshell:
+          <ul>
+            <li>Click on the <em>Sources</em> tab in Chrome (or the <em>Debugger</em> tab in
+              Firefox).</li>
+            <li>In the panel on the left, click on the <em>browser.js</em> file to open it in your debugger.</li>
+            <li>Place breakpoints where you would like to inspect the code.</li>
+            <li>Refresh the page.</li>
+            <li>In the panel on the right, examine any current variables underneath where it says <em>Scope</em>.</li>
+            <li>Press the <span style="display: inline-block; background-image: url(toolbarButtonGlyphs.svg); background-position: -7px -76px; width: 16px; height: 16px;"></span> icon to move onto the next breakpoint.</li>
+            <li>When you are done, you can clear all breakpoints by right clicking underneath where it says <em>Breakpoints</em> and selecting <em>Remove all breakpoints</em>.</li>
+          </ul>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

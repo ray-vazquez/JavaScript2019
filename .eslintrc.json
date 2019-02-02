@@ -17,11 +17,11 @@
   "rules": {
     "indent": ["off", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["warn", "unix"],
-    "no-alert": "warn",
-    "no-console": "warn",
+    "no-alert": "off",
+    "no-console": "off",
     "no-empty": "warn",
     "no-unused-vars": "warn",
     "quotes": ["off", "double"],
-    "semi": ["warn", "always"]
+    "semi": ["off", "always"]
   }
 }
