@@ -1,7 +1,5 @@
 /**
- * Create an array with any three values and the return the array
- *
- * @param  {[string]}  string
+ * Add three programming languages and return the languages array
  * @return {array}
  */
 
@@ -55,15 +53,9 @@ function combineArray(array1, array2) {}
 function isPalindrome(str) {}
 
 /**
- * Make an object that represents a dog called myDog which contains the properties
- * "name", "legs", "tails" and "friends" should be an array with a list of friends names
- * @example  the function should return an object that resembles this:
- * var myObj = {
- *   legs: 4,
- *   tails: "1",
- * };
- *
- * @param  {[string]}  string
+ * Make an object that represents a dog called myDog which contains the keys
+ * "name", "legs", "tails" and "owners". Each should have a value.
+ * "Owners" should be an array with a list of owners names.
  * @return {object}
  */
 
