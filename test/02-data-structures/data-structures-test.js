@@ -43,7 +43,8 @@ describe("Data structures", () => {
   it("it should return a object", () => {
     const dog = createDogObject();
     expect(dog).to.be.an("object");
-    expect(dog).to.have.all.keys("legs", "tails", "friends");
+    expect(dog).to.have.all.keys("name", "legs", "tails", "owners");
+    expect(dog.owners).to.be.an("array");
   });
   it("it should return ballcap", () => {
     const obj = accessObject();
