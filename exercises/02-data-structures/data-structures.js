@@ -4,7 +4,7 @@
  */
 
 function createAnArray() {
-  var array = [];
+  var array = ['hello', 'again', 'world'];
   /*** Add three items to the array ****/
   return array;
 }
@@ -17,6 +17,7 @@ function createAnArray() {
 
 function accessingAnArray() {
   var cars = ['BMW', 'Honda', 'Civic'];
+  return cars[0]
 }
 
 /**
@@ -28,7 +29,8 @@ function accessingAnArray() {
  * highestNumber([5, 1, 2, 3, 10]) // [10]
  *
  **/
-function highestNumber(array) {}
+function highestNumber(array) {
+}
 
 /**
  * Combine an array by using the spread operator
@@ -39,8 +41,11 @@ function highestNumber(array) {}
  * combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
  **/
 
-function combineArray(array1, array2) {}
-
+function combineArray(array1, array2) {
+  var newArr = [...array1,...array2];
+    return newArr;
+}
+  
 /**
  * A palindrom is a word, phrase, or sequence that reads the same backward as forward, e.g., madam, nurses or run.
  * Checks to see if a string is a palindrome.
@@ -50,7 +55,11 @@ function combineArray(array1, array2) {}
  *
  */
 
-function isPalindrome(str) {}
+function isPalindrome(str) {
+  if (str === str.reverse()) {
+    return true;
+  }
+}
 
 /**
  * Make an object that represents a dog called myDog which contains the keys
@@ -73,7 +82,7 @@ function accessObject() {
   };
   // Only change code below this line
 
-  var hatValue = clothes; // Change only this line of code
+  var hatValue = clothes.hat; // Change only this line of code
 
   return hatValue;
 }
@@ -86,9 +95,9 @@ function accessObject() {
 
 function createStudentObject() {
   var student = {
-    firstname: '',
-    lastname: '',
-    skills: []
+    firstname: 'Ramon',
+    lastname: 'Vazquez',
+    skills: ['html', 'css', 'javascript']
   };
   // Only change code below this line.
 
@@ -111,6 +120,10 @@ function returnObjectProperties() {
   };
   //Add code here
   //hint you need to return an array
+
+  var keys = Object.keys(dog);
+  console.log(keys);
+  
 }
 
 /**
@@ -120,7 +133,11 @@ function returnObjectProperties() {
  * @return {object} obj1 and obj2 combined
  */
 
-function combineObject(obj1, obj2) {}
+function combineObject(obj1, obj2) {
+  var { obj1, obj2 } = newObj;
+
+  return newObj;
+}
 
 /***
  *
@@ -131,6 +148,9 @@ function removeDuplicates() {
   // Use Sets to remove duplicate elements from the array
   var numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5];
 
+  var unique = new Set(numbers);
+
+  return unique;
   /** Return the an array of unique values */
   return;
 }
