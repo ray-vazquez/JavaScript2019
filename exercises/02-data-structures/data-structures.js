@@ -16,7 +16,7 @@ function createAnArray() {
  */
 
 function accessingAnArray() {
-  var cars = ["BMW", "Honda", "Civic"];
+  var cars = ['BMW', 'Honda', 'Civic'];
 }
 
 /**
@@ -67,9 +67,9 @@ function createDogObject() {}
  */
 function accessObject() {
   var clothes = {
-    hat: "ballcap",
-    shirt: "jersey",
-    shoes: "cleats"
+    hat: 'ballcap',
+    shirt: 'jersey',
+    shoes: 'cleats'
   };
   // Only change code below this line
 
@@ -86,8 +86,8 @@ function accessObject() {
 
 function createStudentObject() {
   var student = {
-    firstname: "",
-    lastname: "",
+    firstname: '',
+    lastname: '',
     skills: []
   };
   // Only change code below this line.
@@ -106,8 +106,8 @@ function returnObjectProperties() {
   var dog = {
     tail: 1,
     legs: 4,
-    friends: ["Rusty", "Sparky"],
-    name: "Rocket"
+    friends: ['Rusty', 'Sparky'],
+    name: 'Rocket'
   };
   //Add code here
   //hint you need to return an array
@@ -122,6 +122,19 @@ function returnObjectProperties() {
 
 function combineObject(obj1, obj2) {}
 
+/***
+ *
+ * @return {array}
+ */
+
+function removeDuplicates() {
+  // Use Sets to remove duplicate elements from the array
+  var numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5];
+
+  /** Return the an array of unique values */
+  return;
+}
+
 module.exports = {
   createAnArray,
   accessingAnArray,
@@ -132,5 +145,6 @@ module.exports = {
   returnObjectProperties,
   combineArray,
   accessObject,
-  combineObject
+  combineObject,
+  removeDuplicates
 };
