@@ -30,7 +30,14 @@ function accessingAnArray() {
  *
  **/
 function highestNumber(array) {
+  var num;
 
+  for (var i = 0; i < array.length; i ++) {
+    if (array[i] > i ) {
+      num = array[1];
+    }
+  }
+  return num
 }
 
 /**
@@ -128,7 +135,7 @@ function returnObjectProperties() {
   //hint you need to return an array
 
   var dogKeys = Object.keys(dog);
-  console.log(dogKeys);
+  return dogKeys;
   
 }
 
@@ -141,7 +148,9 @@ function returnObjectProperties() {
 
 function combineObject(obj1, obj2) {
 
-  return ({obj1, obj2} = {newObj})
+  var newObj = {...obj1,...obj2}
+
+  return newObj;
 }
 
 /***
