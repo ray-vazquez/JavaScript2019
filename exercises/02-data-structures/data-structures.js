@@ -30,6 +30,7 @@ function accessingAnArray() {
  *
  **/
 function highestNumber(array) {
+
 }
 
 /**
@@ -55,11 +56,7 @@ function combineArray(array1, array2) {
  *
  */
 
-function isPalindrome(str) {
-  if (str === str.reverse()) {
-    return true;
-  }
-}
+function isPalindrome(str) {}
 
 /**
  * Make an object that represents a dog called myDog which contains the keys
@@ -68,7 +65,16 @@ function isPalindrome(str) {
  * @return {object}
  */
 
-function createDogObject() {}
+function createDogObject() {
+
+  var myDog = {
+    name: 'Reggie',
+    legs: 4,
+    tails: 2,
+    owners: ['Ramon', 'Dominique']
+  }
+  return myDog
+}
 
 /**
  * Access testObj and return the value for hat inside clothes (which should be ballcap)
@@ -121,8 +127,8 @@ function returnObjectProperties() {
   //Add code here
   //hint you need to return an array
 
-  var keys = Object.keys(dog);
-  console.log(keys);
+  var dogKeys = Object.keys(dog);
+  console.log(dogKeys);
   
 }
 
@@ -134,9 +140,8 @@ function returnObjectProperties() {
  */
 
 function combineObject(obj1, obj2) {
-  var { obj1, obj2 } = newObj;
 
-  return newObj;
+  return ({obj1, obj2} = {newObj})
 }
 
 /***
@@ -147,12 +152,14 @@ function combineObject(obj1, obj2) {
 function removeDuplicates() {
   // Use Sets to remove duplicate elements from the array
   var numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5];
-
   var unique = new Set(numbers);
-
-  return unique;
+  var arr = [];
+  
+  for (var i of unique) {
+    arr.push(i);
+  }
+  return arr;
   /** Return the an array of unique values */
-  return;
 }
 
 module.exports = {
