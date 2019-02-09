@@ -30,3 +30,21 @@ function upperCaseEachElementInArray(array) {
  */
 
 function stringToArrayConverter(str) {}
+
+/**
+ * 
+ * @param  { string }
+ * @return { array }
+ * @example
+ */
+
+
+/**
+ * Count the occurances of the elements inside an array and return an object with the key representing the element and value representing the occurrances
+ * @param {array}
+ * @return {obj}
+ * @example 
+ * dynamicObject(['Javascript','Javascript','HTML','HTML', 'CSS','CSS','PHP']) // {Javascript:2, HTML:2,CSS:2, PHP:1}
+ */
+
+function dynamicObject()
