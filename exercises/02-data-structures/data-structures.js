@@ -41,8 +41,6 @@ function highestNumber(array) {
   return num;
 }
 
-console.log(highestNumber);
-
 /**
  * Combine an array by using the spread operator
  * @param  {array} array1
@@ -67,12 +65,7 @@ function combineArray(array1, array2) {
  */
 
 function isPalindrome(str) {
-  if (str.split('').reverse().join('').toLowerCase() === str) {
-    return true
-  }
-  else {
-    return false
-  }
+  return (str.split('').reverse().join('').toLowerCase() === str ? true : false)
 }
 
 /**
