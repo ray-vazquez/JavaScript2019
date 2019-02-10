@@ -55,4 +55,11 @@ function stringToArrayConverter(str) {}
  * { "Javascript":2, "HTML":2, "CSS":2, "PHP":1 }
  */
 
-function dynamicObject() {}
+function dynamicObject(array) {}
+
+module.exports = {
+  upperCaseEachElementInArray,
+  addMiddleNameToObject,
+  stringToArrayConverter,
+  dynamicObject
+};
