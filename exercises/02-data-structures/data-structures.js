@@ -30,16 +30,16 @@ function accessingAnArray() {
  *
  **/
 function highestNumber(array) {
-  var num = 0;
+  var largerNum = 0;
 
   for (var i = 0; i < array.length; i++) {
-    if (array[i] > i) {
-      num = array[i];
-      // i++
+    if (array[i] > largerNum) {
+      largerNum = array[i];
     }
   }
-  return num;
+  return largerNum;
 }
+
 
 /**
  * Combine an array by using the spread operator
@@ -110,14 +110,27 @@ function accessObject() {
 
 function createStudentObject() {
   var student = {
-    firstname: "Ramon",
-    lastname: "Vazquez",
-    skills: ["html", "css", "javascript"]
+    firstname: "",
+    lastname: "",
+    skills: []
   };
   // Only change code below this line.
-
+  student.firstname = 'Ramon'
+  student.lastname = 'Vazquez'
+  student.skills = ['HTML','CSS', 'JavaScript']
   return student;
 }
+
+// alternatively create student object outside function to make reusable
+// var ramon = createStudentObject()
+
+// var ramon = createStudentObject('Ramon', 'Vazquez', ['HTML','CSS', 'JavaScript'])
+
+// ramon.firstname = 'Ramon';
+// ramon.lastname = 'Vazquez'; 
+// ramon.skills = ['HTML','CSS', 'JavaScript']
+// console.log(Object.entries(ramon))
+
 
 /**
  *  Using Object.keys return all the properties contained in the object.
