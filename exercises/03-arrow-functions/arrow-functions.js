@@ -23,9 +23,8 @@ exports.before = {
  * @param {number} b
  * @returns {number} the product of a times b
  */
-function multiply(a, b) {
-  return a * b;
-}
+var multiply = (a, b) => a * b;
+
 
 /**
  * Refactor the following to use ES6 arrow syntax.
@@ -35,7 +34,7 @@ function multiply(a, b) {
  * @example
  * doubleNumbers([1, 3, 5]); // [2, 6, 10]
  */
-function doubleNumbers(array) {
+var doubleNumbers = (array) => {
   var newArray = [];
   for (var num of array) {
     newArray.push(num * 2);
@@ -50,8 +49,8 @@ function doubleNumbers(array) {
 
 var isFinished = false;
 
-function wait() {
-  setTimeout(function() {
+var wait = () => {
+  setTimeout (() => {
     isFinished = true;
   }, 100);
 }
