@@ -36,9 +36,8 @@ function addMiddleNameToObject(names, middleName) {
   for (var item in names) {
     obj[item] = names[item];
   }
-  var middleName = (obj["middleName"] = middleName);
 
-  return {...obj, middleName};
+  return { ...obj, middleName };
 }
 
 /**
