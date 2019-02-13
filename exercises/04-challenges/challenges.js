@@ -8,7 +8,8 @@
  *
  */
 
-function confirmEnding() {}
+var confirmEnding = () => {};
+
 /**
  *  Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number.
  *  @param  {string}
@@ -19,7 +20,7 @@ function confirmEnding() {}
  *  @example repeatStringNumTimes("abc", -2) should return ""
  */
 
-function repeatStringNumTimes() {}
+var repeatStringNumTimes = () => {};
 
 /**
  *  Find the Longest Word in a String
@@ -31,7 +32,7 @@ function repeatStringNumTimes() {}
  *
  */
 
-function findLongestWordLength() {}
+var findLongestWordLength = () => {};
 
 module.exports = {
   findLongestWordLength,
