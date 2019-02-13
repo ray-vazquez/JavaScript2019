@@ -9,8 +9,14 @@
  *
  */
 
-function upperCaseEachElementInArray(array) {
-  /*** Dont forget to return an array with all elements being upper-cased */
+function upperCaseEachElementInArray(array) {  
+  var arr = []
+
+  for(var i = 0; i < array.length; i ++) {
+      var newWord = array[i].charAt(0).toUpperCase() + array[i].slice(1)
+      arr.push(newWord)
+  }
+  return arr
 }
 
 /**
@@ -36,8 +42,9 @@ function addMiddleNameToObject(names, middleName) {}
  * // ["I", "went", "home."]
  */
 
-function stringToArrayConverter(str) {}
-
+function stringToArrayConverter(str) {
+  return str.split(' ');
+}
 /**
  *
  * @param  { string }
@@ -53,9 +60,21 @@ function stringToArrayConverter(str) {}
  * @example
  * dynamicObject(["Javascript","Javascript","HTML","HTML", "CSS","CSS","PHP"])
  * { "Javascript":2, "HTML":2, "CSS":2, "PHP":1 }
- */
+ */   
 
-function dynamicObject(array) {}
+function dynamicObject(array) {
+  var obj = {};
+  for (var item of array) {
+    if (obj[item]) {
+      obj[item] += 1
+    }
+    else {
+      obj[item] = 1
+    }
+  }
+  return obj
+}
+
 
 module.exports = {
   upperCaseEachElementInArray,
