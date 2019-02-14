@@ -5,8 +5,22 @@
  * @returns {Object} an object that has two methods. See comments below.
  */
 const calculator = () => {
+  var sum = 0;
+  return {
+    setter: function(number) {
+      sum = sum + number
+      return sum ;
+    },
+    getter: function() {
+      return sum;
+    }
+  }
+};
+  
+
   /**
    * Create a private variable called "sum"
+   *
    * @var {number}
    */
   /**
@@ -20,7 +34,7 @@ const calculator = () => {
    * that should return the value of "sum" above.
    * @returns {number} the value of sum
    */
-};
+
 
 /**
  * Write a function called guessingGame which takes in one parameter amount.
