@@ -8,7 +8,9 @@
  *
  */
 
-var confirmEnding = () => {};
+  var confirmEnding = (string, str) => {
+    return string.slice(-1) === str ? true : false
+  };
 
 /**
  *  Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number.
@@ -20,8 +22,7 @@ var confirmEnding = () => {};
  *  @example repeatStringNumTimes("abc", -2) should return ""
  */
 
-var repeatStringNumTimes = () => {};
-
+var repeatStringNumTimes = (string, str) => {}
 /**
  *  Find the Longest Word in a String
  *  @param {string}
