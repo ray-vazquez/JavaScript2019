@@ -16,18 +16,7 @@ const forEach = (arr, callback) => {};
  */
 const showFirstAndLast = arr => {};
 
-/**
- * Find and return only the even numbers in an array
- * @param {array} arr
- * @returns {array} a new array that only includes the even numbers
- * @example
- *   onlyEvenValues([1,2,3]) // [2]
- *   onlyEvenValues([5,1,2,3,10]) // [2,10]
- */
-const onlyEvenValues = arr => {};
-
 module.exports = {
   forEach,
-  showFirstAndLast,
-  onlyEvenValues
+  showFirstAndLast
 };

@@ -4,11 +4,10 @@ chai.use(require("chai-arrays"));
 
 const {
   forEach,
-  showFirstAndLast,
-  onlyEvenValues
+  showFirstAndLast
 } = require("../../exercises/05-foreach/foreach");
 
-describe.only("testing the functionalitly of forEach", () => {
+describe.only("forEach", () => {
   it("tests forEach", () => {
     let numbersDoubled = [];
     let suppliedArr = [];
@@ -25,9 +24,5 @@ describe.only("testing the functionalitly of forEach", () => {
   it("showFirstAndLast should print only the first and last letter of a string", () => {
     const abbreviatedName = showFirstAndLast(["colt", "matt", "tim", "udemy"]);
     expect(abbreviatedName).to.be.equalTo(["ct", "mt", "tm", "uy"]);
-  });
-  it("onlyEvenValues should only return even numbers from an array", () => {
-    const evenNumbers = onlyEvenValues([2, 3, 4, 5]);
-    expect(evenNumbers).to.be.equalTo([2, 4]);
   });
 });
