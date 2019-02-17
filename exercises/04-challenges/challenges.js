@@ -31,6 +31,8 @@ var repeatStringNumTimes = (string, str) => {
       return "";
     } else {
       return "something went way wrong";
+
+
     }
   }
 };
@@ -49,7 +51,7 @@ var repeatStringNumTimes = (string, str) => {
 var findLongestWordLength = string => {
   var arr = [...string.split(" ")];
   var words = [];
-  
+
   arr.forEach(i => {
     words = [...words, i.length]
   });
