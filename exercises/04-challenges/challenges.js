@@ -31,6 +31,7 @@ var repeatStringNumTimes = (string, str) => {
     } else {
       return "something went way wrong";
 
+
     }
   }
 };
