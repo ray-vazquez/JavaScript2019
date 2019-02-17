@@ -23,14 +23,15 @@ var confirmEnding = (string, str) => {
  */
 
 var repeatStringNumTimes = (string, str) => {
-  // var num = parseInt(str);
-  // for (var i = 1; i < num; i++) {
-  //   if (num < 0) {
-  //     return (" ");
-  //   } else {
-  //     return (string += string);
-  //   }
-  // }
+  for (let i = 0; i < str; i++) {
+    if (typeof str === "number" && str > 0) {
+      return string.repeat(str);
+    } else if (typeof str === "number" && str < 0) {
+      return "";
+    } else {
+      return "something went way wrong";
+    }
+  }
 };
 
 /**
@@ -45,11 +46,12 @@ var repeatStringNumTimes = (string, str) => {
 
 var findLongestWordLength = string => {
   var arr = [...string.split(" ")];
-  var longestWordLength = [];
+  var words = [];
+  
   arr.forEach(i => {
-    longestWordLength.push(i.length);
+    words = [...words, i.length]
   });
-  return Math.max(...longestWordLength);
+  return Math.max(...words);
 };
 
 module.exports = {
