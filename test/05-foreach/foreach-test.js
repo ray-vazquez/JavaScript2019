@@ -7,7 +7,7 @@ const {
   showFirstAndLast
 } = require("../../exercises/05-foreach/foreach");
 
-describe.only("forEach", () => {
+describe("forEach", () => {
   it("tests forEach", () => {
     let numbersDoubled = [];
     let suppliedArr = [];

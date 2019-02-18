@@ -3,8 +3,8 @@
  *  once it has been sorted.
  * The returned value should be a number.
  *  @param  {array}
- *  @param  {integar}
- *  @return {integar}
+ *  @param  {number}
+ *  @return {number}
  *
  *  @example getIndexToIns([10, 20, 30, 40, 50], 35) should return 3
  *  @example getIndexToIns([10, 20, 30, 40, 50], 30) should return 2
@@ -13,7 +13,7 @@
  *
  */
 
-function getIndexToIns(array, num) {}
+const getIndexToIns = (array, num) => {};
 
 /**
  * Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.
@@ -28,7 +28,7 @@ function getIndexToIns(array, num) {}
  *  @example [], ["snuffleupagus", "cookie monster", "elmo"] should return ["snuffleupagus", "cookie monster", "elmo"]
  */
 
-function diffArray(arr1, arr2) {}
+const diffArray = (arr1, arr2) => {};
 
 module.exports = {
   diffArray,
