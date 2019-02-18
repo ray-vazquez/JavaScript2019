@@ -32,13 +32,9 @@ function upperCaseEachElementInArray(array) {
  */
 
 function addMiddleNameToObject(names, middleName) {
-  var obj = {};
-  for (var item in names) {
-    obj[item] = names[item];
-  }
-
-  return { ...obj, middleName };
+  return {...names, middleName};
 }
+
 
 /**
  * Use split method to return an array on white space
