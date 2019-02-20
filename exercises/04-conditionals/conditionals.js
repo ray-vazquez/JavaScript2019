@@ -47,7 +47,7 @@ var updateProduct = (product, action) => {
   // Do not change above this line
 
   if (action.type === "ADD") {
-switch    newProduct = product;
+newProduct = product;
     newProduct.cost = product.cost + action.payload;
   } else if (action.type === "MULTIPLY") {
     // Use the spread operator here instead

@@ -14,23 +14,17 @@
  */
 
 const getIndexToIns = (array, num) => {
-var arr = array.sort()
-  for (let i = 0; i < arr.length; i ++) {
-    let firstHalf = []
-    let secondHalf = []
-    if (arr[i] > num ) {
-      console.log(firstHalf = [...arr.slice(0, i - 1 )])
-      firstHalf.push(num)
-      secondHalf = [...arr.slice(i -1)];
-      
-    }
+  let firstHalf = [];
+  var sorted = array.sort((a, b) => a - b);
 
-    
-    console.log([...firstHalf, ...secondHalf].indexOf(arr[i]))
+  for (var i = 0; i < sorted.length; i++) {
+    if (sorted[i] < num) {
+      firstHalf.push(sorted[i]);
+    }
+    return firstHalf.length + 1
   }
 };
 
-getIndexToIns([40, 59], 35)
 
 /**
  * Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.
@@ -45,7 +39,14 @@ getIndexToIns([40, 59], 35)
  *  @example [], ["snuffleupagus", "cookie monster", "elmo"] should return ["snuffleupagus", "cookie monster", "elmo"]
  */
 
-const diffArray = (arr1, arr2) => {};
+const diffArray = (arr1, arr2) => {}
+//   for(let i = 0; i <  arr1.length; i ++) {
+//     for (let j = 0; j < arr2.length; j++) {
+//       arr1[i] !== arr2[j] ? [...arr1[i], arr2[j]] : 'not symetrical'
+
+//     }
+//   }
+// };
 
 module.exports = {
   diffArray,
