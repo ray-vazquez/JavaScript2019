@@ -8,42 +8,46 @@ const calculator = () => {
   var sum = 0;
   return {
     setter: function(number) {
-      sum = sum + number
-      return sum ;
+      sum = sum + number;
+      return sum;
     },
     getter: function() {
       return sum;
     }
-  }
+  };
 };
-  
 
-  /**
-   * Create a private variable called "sum"
-   *
-   * @var {number}
-   */
-  /**
-   * Return an object that has two methods:
-   *
-   * 1. The first is a "setter" function that a.) accepts a parameter of type number and
-   *    b.) adds that number to the "sum" above.
-   * @param {number}
-   *
-   * 2. The second function is a "getter" function
-   * that should return the value of "sum" above.
-   * @returns {number} the value of sum
-   */
+/**
+ * Create a private variable called "sum"
+ *
+ * @var {number}
+ */
+/**
+ * Return an object that has two methods:
+ *
+ * 1. The first is a "setter" function that a.) accepts a parameter of type number and
+ *    b.) adds that number to the "sum" above.
+ * @param {number}
+ *
+ * 2. The second function is a "getter" function
+ * that should return the value of "sum" above.
+ * @returns {number} the value of sum
+ */
+
+
 
 
 /**
  * Write a function called guessingGame which takes in one parameter amount.
+ * 
  * The function should return another function that takes in a parameter called guess.
- * In the outer function, you should create a variable called answer which is
- * the result of a random integer between 0 and 10 as well as a variable called guesses which should be set to 0.
+ * 
+ * In the outer function, you should create a variable called answer which is the result of a random integer between 0 and 10 as well as a variable called guesses which should be set to 0.
  *
  * In the inner function, if the guess passed in is the same as the random integer (defined in the outer function),
- * you should return the string "You got it!". If the guess is too high return "Your guess is too high!" and if it is too low, return "Your guess is too low!". You should stop the user from guessing if the amount of guesses they have made is greater than the initial amount passed to the outer function.
+ * you should return the string "You got it!". If the guess is too high return "Your guess is too high!" and if it is too low, return "Your guess is too low!". 
+ * 
+ * You should stop the user from guessing if the amount of guesses they have made is greater than the initial amount passed to the outer function.
  *
  * You will have to make use of closure to solve this problem.
  *
@@ -60,8 +64,30 @@ const calculator = () => {
  * guessRound2(3); // "You're too low!"
  * guessRound2(1); // "No more guesses. The answer was 0"
  */
+// const guessingGame = numberOfRounds => {}
+const guessingGame = numberOfRounds => {
+  var answer = Math.floor(Math.random() * 10);
+  var guesses = 0;
 
-const guessingGame = numberOfRounds => {};
+  return function(guess) {
+      for (var i = 0; i < numberOfRounds; i++) {
+        if (answer === guess) {
+          return("You got it!");
+        } else if (answer > guess) {
+          guesses++;
+          return("You're too low!");
+        } else if (answer < guess) {
+          guesses++;
+          return("You're too high!");
+        } else if (numberOfRounds < guesses){
+          return(`No more guesses. The answer was ${answer}`);
+        }
+        else {
+            return 'guess must be an interger'
+        }
+      }
+    }
+};
 
 module.exports = {
   calculator,
