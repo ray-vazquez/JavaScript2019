@@ -13,7 +13,24 @@
  *
  */
 
-const getIndexToIns = (array, num) => {};
+const getIndexToIns = (array, num) => {
+var arr = array.sort()
+  for (let i = 0; i < arr.length; i ++) {
+    let firstHalf = []
+    let secondHalf = []
+    if (arr[i] > num ) {
+      console.log(firstHalf = [...arr.slice(0, i - 1 )])
+      firstHalf.push(num)
+      secondHalf = [...arr.slice(i -1)];
+      
+    }
+
+    
+    console.log([...firstHalf, ...secondHalf].indexOf(arr[i]))
+  }
+};
+
+getIndexToIns([40, 59], 35)
 
 /**
  * Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.
