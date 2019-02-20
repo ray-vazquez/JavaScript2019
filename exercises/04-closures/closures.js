@@ -68,8 +68,8 @@ const calculator = () => {
 const guessingGame = numberOfRounds => {
   var answer = Math.floor(Math.random() * 10);
   var guesses = 0;
-  return {
-    guess: function(guess) {
+
+  return function(guess) {
       for (var i = 0; i < numberOfRounds; i++) {
         if (answer === guess) {
           return("You got it!");
@@ -79,15 +79,14 @@ const guessingGame = numberOfRounds => {
         } else if (answer < guess) {
           guesses++;
           return("You're too high!");
-        } else if (numberOfRounds === guesses){
-          return("No more guesses. The answer was: " + answer);
+        } else if (numberOfRounds < guesses){
+          return(`No more guesses. The answer was ${answer}`);
         }
         else {
-            return('guess must be an interger')
+            return 'guess must be an interger'
         }
       }
     }
-  };
 };
 
 module.exports = {
