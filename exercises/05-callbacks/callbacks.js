@@ -8,7 +8,7 @@
  * @param {string} name instuctor name
  */
 const printer = (name) => {
-  return `---${name}----`
+  return `--- ${name} ----`
 };
 
 /**
