@@ -5,7 +5,7 @@
  * @param {function} callback
  */
 const forEach = (arr, callback) => {
-  arr.forEach(callback)
+  arr.forEach(callback);
 };
 
 /**
@@ -16,13 +16,23 @@ const forEach = (arr, callback) => {
  *   showFirstAndLast(['colt','matt', 'tim', 'udemy']); // ["ct", "mt", "tm", "uy"]
  *   showFirstAndLast(['hi', 'goodbye', 'smile']) // ['hi', 'ge', 'se']
  */
-const showFirstAndLast = arr => {
-  arr.forEach( i => {
 
-    return i.substring(i.charAt(0) + i.slice(-1))
+
+const showFirstAndLast = arr => {
+  var firstAndLastLetters = []
   
+  arr.forEach( i => {
+    var splitName = i.split("");
+    var firstLetter = splitName[0]
+    var lastLetter = splitName.join("").slice(-1);
+     firstAndLastLetters.push([firstLetter +  lastLetter].join(''))
+    
   });
-};
+    return firstAndLastLetters
+  };
+
+
+
 
 module.exports = {
   forEach,
