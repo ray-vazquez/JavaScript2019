@@ -5,7 +5,12 @@
  * @param {function} callback
  * @returns {mixed} a array of values with the values with some of the values removed
  */
-const filter = (arr, callback) => {};
+const filter = (arr, callback) => {
+  
+  var filtered = (value) => typeof(value) === 'object'
+
+  return arr.filter(callback)
+};
 
 /**
  * Delete the matching user from an array of user objects
@@ -26,7 +31,15 @@ const filter = (arr, callback) => {};
  * findUser(users, 1025);
  * // [{ id: 1024, username:"smile134", email: "smile134@example.com" }]
  */
-const deleteUser = (arr, id) => {};
+const deleteUser = (arr, id) => {
+
+  var isObject = obj => typeof(obj) === 'object'
+
+  var filterIds = item => isObject(item.id) || item.id === 1025 ? true : false
+
+  return arr.filter(filterIds)
+  
+};
 
 module.exports = {
   filter,
