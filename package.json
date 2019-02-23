@@ -6,7 +6,7 @@
     "node": "10.15.1"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --require @babel/register",
     "testAll": "mocha ./test/**/*-test.js --require @babel/register"
   },
   "repository": {
