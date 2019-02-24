@@ -25,7 +25,8 @@ const showFirstAndLast = arr => {
     var splitName = i.split("");
     var firstLetter = splitName[0]
     var lastLetter = splitName.join("").slice(-1);
-     firstAndLastLetters.push([firstLetter +  lastLetter].join(''))
+    
+    firstAndLastLetters.push(firstLetter +  lastLetter.join(''))
     
   });
     return firstAndLastLetters

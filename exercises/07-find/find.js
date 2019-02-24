@@ -8,6 +8,7 @@
 const find = (arr, callback) => {};
 
 /**
+ arr.find(callback)
  * Find and return the matching user in an array of user objects
  * @param {array} arr array of objects, where each object represents a user
  * @param {number} id the user's id
