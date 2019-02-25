@@ -31,15 +31,19 @@ const filter = (arr, callback) => {
  */
 
 const deleteUser = (arr, id) => {
-  var isObject = (obj) => typeof obj === "object";
 
-  var filtered = function(obj, id) {
-    if (isObject(obj) && obj.id=== id ) {
-      arr.pop(id);
-    }
-  };
-  return arr.filter(filtered);
+  arr.filter(function (value, index) {
+    return value.id !==id
+  });
+}
+
+
+  // var isObject = obj => typeof obj === "object";
+  // var filtered = val => isObject(val) && val.id !== id;
+
 };
+
+
 
 module.exports = {
   filter,
