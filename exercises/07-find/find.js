@@ -5,7 +5,12 @@
  * @param {function} callback
  * @returns {mixed} a single value in the array
  */
-const find = (arr, callback) => {};
+const find = (arr, callback) => {
+  
+  // var callback = a => a
+
+  return arr.find( () => callback)
+  }
 
 /**
  arr.find(callback)

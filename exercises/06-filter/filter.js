@@ -6,10 +6,8 @@
  * @returns {mixed} a array of values with the values with some of the values removed
  */
 const filter = (arr, callback) => {
-  
-  var filtered = (value) => typeof(value) === 'object'
-
-  return arr.filter(filtered)
+  var filtered = value => typeof value === "object";
+  return arr.filter(filtered);
 };
 
 /**
@@ -31,14 +29,16 @@ const filter = (arr, callback) => {
  * findUser(users, 1025);
  * // [{ id: 1024, username:"smile134", email: "smile134@example.com" }]
  */
+
 const deleteUser = (arr, id) => {
+  var isObject = (obj) => typeof obj === "object";
 
-  // var isObject = obj => typeof(obj) === 'object'
-
-  // var filterIds = (item) => isObject(item.id) === id ? 'id : ' + id : false 
-
-  // console.log( arr.filter(filterIds))
-  
+  var filtered = function(obj, id) {
+    if (isObject(obj) && obj.id=== id ) {
+      arr.pop(id);
+    }
+  };
+  return arr.filter(filtered);
 };
 
 module.exports = {
