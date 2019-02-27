@@ -33,12 +33,9 @@ const filter = (arr, callback) => {
  */
 const deleteUser = (arr, id) => {
 
-  var isObject = obj => typeof(obj) === 'object'
-
-  var filterIds = item => isObject(item.id) || item.id === 1025 ? true : false
-
-  return arr.filter(filterIds)
-  
+  return arr.filter(function(value, index, arr){
+    return value.id !== id
+  });
 };
 
 module.exports = {

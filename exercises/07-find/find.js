@@ -5,12 +5,8 @@
  * @param {function} callback
  * @returns {mixed} a single value in the array
  */
-const find = (arr, callback) => {
-  
-  // var callback = a => a
+const find = (arr, callback) => arr.find(callback)
 
-  return arr.find( () => callback)
-  }
 
 /**
  arr.find(callback)
@@ -32,7 +28,11 @@ const find = (arr, callback) => {
  * findUser(users, 1025);
  * // { id: 1025, username:"newyorkfarmer", email: "johndoe@example.com" }
  */
-const findUser = (arr, id) => {};
+const findUser = (arr, id) => {
+  return arr.find(function(value, index, arr) {
+    return value.id === id
+  });
+};
 
 module.exports = {
   find,
