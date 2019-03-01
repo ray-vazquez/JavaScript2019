@@ -8,8 +8,8 @@
  */
 const addItems = arr => {
   return arr.reduce(function(acc, num) {
-    return acc + num
-  }); 
+    return acc + num;
+  });
 };
 
 /**
@@ -18,10 +18,8 @@ const addItems = arr => {
  * @returns {array} new, flattened array e.g. `[1, 3, 5, 10]`
  */
 const flattenArray = array => {
-  
- return array.reduce((acc, num) => [...acc, ...num])
-
-}
+  return array.reduce((acc, num) => [...acc, ...num]);
+};
 
 /**
  * Create a function that tallies the number of each kind of "thing" within the array
@@ -33,9 +31,9 @@ const flattenArray = array => {
  */
 const generateTally = array => {
   return array.reduce((acc, curVal) => {
-    acc[curVal] ? acc[curVal] += 1 : acc[curVal] = 1
-    return acc
-  }, {})
+    acc[curVal] = (acc[curVal] || 0) + 1;
+    return acc;
+  }, {});
 };
 
 /**
@@ -60,7 +58,15 @@ const generateTally = array => {
  *   456: {id, 456, name: 'Rachel', age: 35}
  * }
  */
-const arrayToObject = arr => {};
+
+
+const arrayToObject = arr => {
+    return arr.reduce(function (prev, current) { 
+    prev[current.id] = current
+    return prev
+  }, {})
+};
+
 
 module.exports = {
   addItems,
