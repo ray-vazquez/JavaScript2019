@@ -16,7 +16,7 @@ const {
   subtract,
   isEvenNumber,
   findAdults
-} = require("../../exercises/08-unit-testing/unit-testing"); // relative pathway to unit-testing.js file
+} = require("../../exercises/09-unit-testing/unit-testing"); // relative pathway to unit-testing.js file
 
 describe("Unit Testing", () => {
   // If using VScode debugger, change `describe` to `describe.only`
