@@ -13,15 +13,21 @@
  * NOTE that the linter is not up-to-date with ESNext class properties proposal,
  * meaning that you will see red squiggly lines where they do not belong.
  */
-function Calculator(startValue) {
-  let total = 0;
-  if (typeof startValue === "number") total = startValue;
-  return {
-    add: num => {
-      total += num;
-    },
-    get: () => total
-  };
+class Calculator {
+  // defaluts
+  total = 0;
+  
+  constructor (startValue) {
+    this.startValue = typeof startValue === "number" ? this.startValue = startValue : 0;
+    this.total += this.startValue
+}
+
+  get = () => {
+    let newTotal = this.total += this.startValue
+    return newTotal
+  }
+
+  add = num => this.total += num
 }
 
 /**
@@ -30,6 +36,31 @@ function Calculator(startValue) {
  * It should have the method:
  * @method substract which should accept a parameter of type number. The function should subtract the parameter from the total.
  */
+class NewCalculator extends Calculator {
+  total = 0
+  constructor(startValue, total) {
+    super(startValue, total);
+    this.total += this.startValue;
+  }
+  
+  get = () => this.total
+
+  subtract = (num)  => this.total -= num
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Ignore this. It is for testing
