@@ -40,16 +40,36 @@ describe("Unit Testing", () => {
       expect(sum).to.equal(5);
     });
   });
+  
+  describe("subtract", () => {
+    it("should subtract two numbers", () => {
+      const sub = subtract(3, 2);
+      expect(sub).to.equal(1);
+    });
+  });
 
-  /**
-   * Write a unit test for `subtract` here.
-   */
-
-  /**
-   * Write two tests for `isEvenNumber` here.
-   * Use a a different assertion than `.equal()`
-   * @see https://www.chaijs.com/api/bdd/
-   */
+  describe("isEvenNumber", () => {
+    it("should return zero", () => {
+      const num = isEvenNumber(2)
+      expect(num).to.equal(true)
+    }); 
+  });
+  
+  describe("isEvenNumber", () => {
+    it("should have one numerical arugment", () => {
+      const err = () => {
+        throw new TypeError('an argument must be provided')
+      }
+      expect(err).to.throw(false)
+    }); 
+  });
+  
+  ///////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////
+  
 
   describe("findAdults", () => {
     // Remove the `.skip` when you are ready to write this test
