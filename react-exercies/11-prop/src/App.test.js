@@ -5,7 +5,7 @@ import App from './App';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai';
-import IsLoggedIn from './components/isLoggedIn';
+import IsUserLoggedIn from './components/IsUserLoggedIn';
 
 Enzyme.configure({ adapter: new Adapter() });
 describe('Prop', () => {
@@ -23,7 +23,7 @@ describe('Prop', () => {
       isUserLoggedIn: true
     }
   ];
-  const wrapper = shallow(<IsLoggedIn Users={Users} />);
+  const wrapper = shallow(<IsUserLoggedIn Users={Users} />);
 
   it('component renders the correct amount of users', () => {
     wrapper.setProps({ Users: Users });
