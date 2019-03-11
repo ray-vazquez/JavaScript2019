@@ -21,7 +21,7 @@
  * with <script></script> tags.
  */
 const { expect } = require("chai");
-
+const _ = require('lodash')
 /**
  * Each file has it's own scope. I can't access something from another
  * file unless I import it, because it is out of scope.
@@ -40,7 +40,7 @@ describe("Unit Testing", () => {
       expect(sum).to.equal(5);
     });
   });
-  
+
   describe("subtract", () => {
     it("should subtract two numbers", () => {
       const sub = subtract(3, 2);
@@ -50,30 +50,30 @@ describe("Unit Testing", () => {
 
   describe("isEvenNumber", () => {
     it("should return zero", () => {
-      const num = isEvenNumber(2)
-      expect(num).to.equal(true)
-    }); 
+      const num = isEvenNumber(2);
+      expect(num).to.equal(true);
+    });
   });
-  
+
   describe("isEvenNumber", () => {
     it("should have one numerical arugment", () => {
       const err = () => {
-        throw new TypeError('an argument must be provided')
-      }
-      expect(err).to.throw(false)
-    }); 
+        throw new TypeError("an argument must be provided");
+      };
+      expect(err).to.throw(false);
+    });
   });
-  
+
   ///////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////
-  
 
   describe("findAdults", () => {
     // Remove the `.skip` when you are ready to write this test
-    it.skip("will find, in a multidimensional array, all the people older than 18", () => {
+    it("will find, in a multidimensional array, all the people\
+       older than 18", () => {
       /**
        * Complete the unit test for findAdults here.
        * Hint: Arrays are passed by reference, so you will need to call on a test that deeply compares values.
@@ -84,6 +84,11 @@ describe("Unit Testing", () => {
         { name: "Aiden", age: 10 },
         { name: "Chloe", age: 16 }
       ];
+
+     const ofAge =  _.forIn(people, person => {
+        return person.age <= 18
+      });
+      expect(ofAge).to.deep.equal(18);
     });
 
     // Remove the `.skip` when you are ready to write this test
