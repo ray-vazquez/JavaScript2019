@@ -5,7 +5,7 @@ import App from "./App";
 import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { expect } from "chai";
-import IsUserLoggedIn from "./components/isLoggedIn";
+import IsUserLoggedIn from "./components/IsUserLoggedIn";
 
 Enzyme.configure({ adapter: new Adapter() });
 describe("Prop", () => {
