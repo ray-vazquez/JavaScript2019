@@ -13,6 +13,6 @@
    isUserLoggedIn:true
    },
    ]
-   example <User isUserLoggedIn=[Users]>
+   example <IsUserLoggedIn Users=[Users]>
 
 2. The stateless component should iterate over each value creating an un orderled listed displaying a message stating the user's name and if the user is logged in or not.
