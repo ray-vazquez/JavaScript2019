@@ -21,7 +21,7 @@ class Calculator {
   add = num => {
     this.total += num;
   };
-  get = num => this.total;
+  get = () => this.total;
 }
 
 /**

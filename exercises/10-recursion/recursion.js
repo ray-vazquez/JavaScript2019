@@ -20,15 +20,7 @@ const { tree } = require("./recursion-tree-data");
  *    hidden: false
  * }
  */
-const findId = (data, id) => {
-  for (let x in data) {
-    if (data[x].id === id) {
-      return data[x];
-    } else if (!data[x].id) {
-      return findId(data[x], id);
-    }
-  }
-};
+const findId = (data, id) => {};
 
 /**
  * Using recursion, remove the object from the node tree that has a given id.
