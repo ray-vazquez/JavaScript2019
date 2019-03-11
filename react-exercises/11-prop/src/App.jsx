@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import IsLoggedIn from './components/isLoggedIn';
+import React, { Component } from "react";
+// Import IsUserLoggedIn here
 
 class App extends Component {
   render() {
     const Users = [
-     
+      // Complete me
     ];
     return (
       <div className="App">
-        <IsLoggedIn Users={Users} />
+        {/* Add IsUserLoggedIn component here with props */}
       </div>
     );
   }
