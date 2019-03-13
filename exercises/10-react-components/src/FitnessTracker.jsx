@@ -27,7 +27,31 @@ import activities from "./FitnessTrackerActivities.json";
 function FitnessActivity(props) {}
 
 function FitnessTracker() {
-  return <>Put JSX Here</>;
+  return (
+    <main class="FitnessTracker">
+      <div class="FitnessActivity">
+        <div class="FitnessActivity-startDate">
+          {activities.map((activity, event, time, miles, index) => {
+            return <div key={"startDate-" + index}>{activity.startDate}
+            
+            
+            </div>
+          })}
+        <div class="FitnessActivity-activity">
+        {activities.map((activity, index) => {
+            return <div key={"activity-" + index}>{activity.activity}</div>
+          })}
+        </div>
+        </div>
+        <div class="FitnessActivity-miles"> {activities.map((activity, index) => {
+            return <div key={"miles-" + index}>{activity.miles}</div>
+          })}</div>
+        <div class="FitnessActivity-time">2 {activities.map((activity, index) => {
+            return <div key={"time-" + index}>{activity.time}</div>
+          })}</div>
+      </div>
+    </main>
+  );
 }
 
 export default FitnessTracker;

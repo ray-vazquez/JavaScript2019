@@ -85,7 +85,7 @@ describe("Unit Testing", () => {
         { name: "Chloe", age: 16 }
       ];
 
-     const ofAge =  _.forIn(people, person => {
+     const ofAge =  _.filter(people, person => {
         return person.age <= 18
       });
       expect(ofAge).to.deep.equal(18);
