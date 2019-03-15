@@ -26,25 +26,13 @@ import "./FitnessTracker.css";
 
 import activities from "./FitnessTrackerActivities.json";
 
-function FitnessActivity(props) {}
+function FitnessActivity(props) {
+  // Put the HTML as JSX
+}
 
 function FitnessTracker() {
-  return (
-    <main class="FitnessTracker">
-      <div class="FitnessActivity">
-
-        <div class="FitnessActivity-startDate" >
-   
-        </div>
-        
-
-        <div class="FitnessActivity-activity"></div>
-        <div class="FitnessActivity-miles"></div>
-        <div class="FitnessActivity-time"></div>
-
-        </div>
-    </main>
-  );
+  // Loop through activities here
+  return <>Put JSX Here</>;
 }
 
 export default FitnessTracker;
