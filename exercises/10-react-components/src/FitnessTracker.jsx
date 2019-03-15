@@ -22,6 +22,8 @@
 import React from "react";
 import "./FitnessTracker.css";
 // You will need to loop through "activities" data in your React components below
+
+
 import activities from "./FitnessTrackerActivities.json";
 
 function FitnessActivity(props) {}
@@ -30,26 +32,17 @@ function FitnessTracker() {
   return (
     <main class="FitnessTracker">
       <div class="FitnessActivity">
-        <div class="FitnessActivity-startDate">
-          {activities.map((activity, event, time, miles, index) => {
-            return <div key={"startDate-" + index}>{activity.startDate}
-            
-            
-            </div>
-          })}
-        <div class="FitnessActivity-activity">
-        {activities.map((activity, index) => {
-            return <div key={"activity-" + index}>{activity.activity}</div>
-          })}
+
+        <div class="FitnessActivity-startDate" >
+   
         </div>
+        
+
+        <div class="FitnessActivity-activity"></div>
+        <div class="FitnessActivity-miles"></div>
+        <div class="FitnessActivity-time"></div>
+
         </div>
-        <div class="FitnessActivity-miles"> {activities.map((activity, index) => {
-            return <div key={"miles-" + index}>{activity.miles}</div>
-          })}</div>
-        <div class="FitnessActivity-time">2 {activities.map((activity, index) => {
-            return <div key={"time-" + index}>{activity.time}</div>
-          })}</div>
-      </div>
     </main>
   );
 }
