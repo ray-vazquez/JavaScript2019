@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Address.css";
+import countries from  "../../assets/countries"
+import states from  "../../assets/states"
 // Import data from "assets/countries.js" and "assets/states.js" here
 
 class Address extends Component {
