@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.4;
+}
+.content-wrap {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(49, 100, 40, 0.3);
+}
+
+h1 {
+  padding-bottom: 10px;
+}
+
+p {
+  font: 100 1.2em/1.4em "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
