@@ -21,18 +21,30 @@
 
 import React from "react";
 import "./FitnessTracker.css";
-// You will need to loop through "activities" data in your React components below
-
-
 import activities from "./FitnessTrackerActivities.json";
 
-function FitnessActivity(props) {
-  // Put the HTML as JSX
-}
+// You will need to loop through "activities" data in your React components below
 
-function FitnessTracker() {
-  // Loop through activities here
-  return <>Put JSX Here</>;
+const FitnessActivity = () => {
+  return activities.map(item => {
+    return (
+      <div className="FitnessActivity">
+        <div className="FitnessActivity-startDate">{item.startDate}</div>
+        <div className="FitnessActivity-activity">{item.activity}</div>
+        <div className="FitnessActivity-miles">{item.miles}</div>
+        <div className="FitnessActivity-time">{item.time}</div>
+      </div>
+    );
+  });
+};
+class FitnessTracker extends React.Component {
+  render() {
+    return (
+      <div>
+        <FitnessActivity />
+      </div>
+    );
+  }
 }
 
 export default FitnessTracker;

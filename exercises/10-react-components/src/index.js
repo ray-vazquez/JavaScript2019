@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FitnessTracker from "./FitnessTracker";
+import FittnessView from "./FitnessTracker";
 
-ReactDOM.render(<FitnessTracker />, document.getElementById("root"));
+ReactDOM.render(<FittnessView />, document.getElementById("root"));
