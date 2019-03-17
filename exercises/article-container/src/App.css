@@ -12,7 +12,7 @@ body {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  background: rgba(49, 100, 40, 0.3);
+  background: rgb(106, 187, 91);
 }
 
 h1 {
@@ -22,4 +22,10 @@ h1 {
 p {
   font: 100 1.2em/1.4em "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
+}
+
+.content-wrap:hover {
+  background: rgb(125, 224, 107);
+  outline: 1px solid rgb(198, 243, 167);
+
 }
