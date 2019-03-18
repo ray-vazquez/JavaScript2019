@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Address.css";
-import countries from  "../../assets/countries"
-import states from  "../../assets/states"
+import countries from "../../assets/countries";
+import states from "../../assets/states";
 // Import data from "assets/countries.js" and "assets/states.js" here
 
 class Address extends Component {
@@ -12,8 +12,16 @@ class Address extends Component {
     city: "",
     state: "",
     postalCode: "",
-    ZipCode: ""
+    ZipCode: "",
+    country: ""
   };
+
+  set = (field, value) => {
+    this.setState({ [field]: value });
+  };
+
+  handelStateChange = e => this.setState({ state: e.target.value });
+  handelCountryChange = e => this.setState({ country: e.target.value });
 
   render() {
     return (
@@ -27,6 +35,8 @@ class Address extends Component {
             name="firstName"
             type="text"
             className="form-control"
+            value={this.state.firstName}
+            onChange={e => this.set("firstName", e.target.value)}
           />
         </div>
         <div className="form-group">
@@ -38,6 +48,8 @@ class Address extends Component {
             name="lastName"
             type="text"
             className="form-control"
+            value={this.state.lastName}
+            onChange={e => this.set("lastName", e.target.value)}
           />
         </div>
         <div className="form-group">
@@ -49,24 +61,41 @@ class Address extends Component {
             name="addressLine1"
             type="text"
             className="form-control"
+            value={this.state.addressLine1}
+            onChange={e => this.set("addressLine1", e.target.value)}
           />
           <p className="help-block text-muted">
             Street address, P.O. box, company name, c/o
           </p>
         </div>
-
         <div className="form-group">
           <label htmlFor="city" className="control-label">
             City / Town
           </label>
-          <input id="city" name="city" type="text" className="form-control" />
+          <input id="city" name="city" type="text" className="form-control" value={this.state.city}
+            onChange={e => this.set("city", e.target.value)}
+
+            />
         </div>
+
         <div className="form-group">
           <label htmlFor="state" className="control-label">
             State / Province / Region
           </label>
-          {/* Loop through the states you imported here */}
-          <select id="state" name="state" className="form-control" />
+
+          <select
+            id="state"
+            name="state"
+            className="form-control"
+            value={this.state.state}
+            onChange={e => this.set("state", e.target.value)}
+          >
+            {states.map((item, index) => (
+              <option key={"state-" + (index + 1)} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="form-group">
@@ -78,6 +107,9 @@ class Address extends Component {
             name="postalCode"
             type="text"
             className="form-control"
+            value={this.state.postalCode}
+            onChange={e => this.set("postalCode", e.target.value)}
+            
           />
         </div>
 
@@ -85,9 +117,23 @@ class Address extends Component {
           <label htmlFor="country" className="control-label">
             Country
           </label>
-          {/* Loop through the countries you imported here */}
-          <select id="country" name="country" className="form-control" />
+
+          <select
+            id="country"
+            name="country"
+            className="form-control"
+            value={this.state.country}
+            onChange={e => this.set("country", e.target.value)}
+
+            >
+            {countries.map((item, index) => (
+              <option key={"item-" + (index + 1)} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
         </div>
+
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
