@@ -13,10 +13,12 @@
  * Call on this function to populates the dropdown on the page with a character.
  * @param {Object} data the entire AJAX response
  */
+
+
 const populateDropDown = data => {
   $("#dropdown").empty();
-  $.each(data.results, function(i, p) {
-    $("#dropdown").append(
+  data.forEach(p => { 
+  $("#dropdown").append(
       $("<option></option>")
         .val(p.name)
         .html(p.name)
@@ -24,6 +26,19 @@ const populateDropDown = data => {
   });
 };
 
-/**
- * Axios here
- */
+
+axios ({
+    url: "https://rickandmortyapi.com/api/character",
+    method: "GET", 
+    headers: {
+      "Content-Type": "applictation/json"
+    },
+    body: JSON.stringify({
+      id:1
+    })
+
+})
+
+.then(response => (
+  populateDropDown(response.data.results)))
+.catch(() => "dose not populate")
