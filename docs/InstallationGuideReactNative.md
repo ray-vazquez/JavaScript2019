@@ -1,4 +1,4 @@
-# Installing and Initialiing React Native
+# Installing and Initializing React Native
 
 ## Before You Start
 
