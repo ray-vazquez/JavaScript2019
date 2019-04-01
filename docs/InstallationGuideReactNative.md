@@ -14,7 +14,7 @@ In the right-hand panel underneath where it says "USER SETTINGS", append the opt
 
 ## Installing on Mac
 
-Installing React Native is pretty painless on Mac OS because we have have most of what we need already installed (including an iOS simulator). However, you will need to install React Native, Watchman and XCode command line tools.
+Installing React Native is pretty painless on Mac OS because we have have most of what we need already installed (including an iOS simulator). However, you will need to install React Native, Watchman, XCode command line tools and the Expo client.
 
 To begin, install Watchman:
 
@@ -29,13 +29,19 @@ npm install -g react-native-cli
 npm install -g react-devtools
 ```
 
-Finally, you will need to the XCode command line tools. Try installing with this line of code:
+Next, you will need to the XCode command line tools. Try installing with this line of code:
 
 ```bash
 xcode-select --install
 ```
 
 If that doesn't work, follow the directions in https://shift.infinite.red/painless-react-native-setup-for-mac-windows-linux-956c23d2abf9
+
+Finally, install the Expo client:
+
+```bash
+npm install -g expo-cli
+```
 
 ## Installing on Windows
 
@@ -48,10 +54,11 @@ You computer will need to meet the following requirements. If doesn't, you will 
 
 Follow this React Native installation guide: https://medium.com/swlh/how-to-setup-your-development-environment-using-react-native-on-windows-768a14ff8aec
 
-In addition, you should install the React Dev Tools:
+In addition, you should install the React Dev Tools and Expo:
 
 ```shell
 npm install -g react-devtools
+npm install -g expo-cli
 ```
 
 If you see this error when you try to install Android Studio, see the Expo Snack below.
