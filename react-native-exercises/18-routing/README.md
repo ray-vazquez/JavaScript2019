@@ -10,3 +10,5 @@ You will create a menu that will route to 3 separate components. The routing wil
 
 The end product should look like this:
 https://giphy.com/gifs/react-native-3rSXUYdZ4U5GBTSSvU
+
+Please take a look at _react-native-exercises/18-routing_ and _solutions/userDirectory/App.js_ for examples.
